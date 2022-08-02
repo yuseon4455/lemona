@@ -7,4 +7,7 @@ $(function(){
 	// AOS 초기화
 	AOS.init();
 
+	//모달창
+	
+
 }); // $

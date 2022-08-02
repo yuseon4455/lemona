@@ -187,6 +187,7 @@ letter-spacing: 0.2em;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
  }
  
  #main-section2 .container .col{
@@ -196,6 +197,9 @@ letter-spacing: 0.2em;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   text-align: center;
+   background-size: cover;
+   background-position: center;
  }
  
  #main-section2 .container .col h2{
@@ -254,3 +258,49 @@ letter-spacing: 0.2em;
     padding-right: 20px;
   }
  }
+
+
+  /* 모달창 */
+  .modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+   }
+  
+   .modal.on {
+    display: flex;
+   }
+  
+   .modal .box {
+    position: relative;
+    /* border: 5px solid red; */
+    /* 영상비율 16:9 */
+    max-width: 1000px;
+    max-height: 562.5px;
+   }
+  
+   .modal .box iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+   }
+  
+   .modal .btn-close {
+    position: absolute;
+    top: -70px;
+    right: 10px;
+    background-color: transparent;
+    border-style: none;
+   }
+  
+  .bi-x-circle {
+    font-size: 48px;
+    color: #fff;
+  }
